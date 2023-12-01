@@ -723,40 +723,44 @@
               <div class="script-item">
                 <p>Upload Music</p>
 
-                <div class="input-row">
-                  <div class="fv-form-group">
-                    <label for="">Upload Image</label>
-                    <div class="fv-form-input">
-                      <input class="fv-input fv-pl-1" type="file" />
+                <div data-form-group="music-form" class="form-groups">
+                  <div class="input-row">
+                    <div class="fv-form-group">
+                      <label for="">Upload Image</label>
+                      <div class="fv-form-input">
+                        <input class="fv-input fv-pl-1" type="file" />
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="fv-form-group">
-                    <label for="">Music Tittle</label>
-                    <div class="fv-form-input">
-                      <input
-                        class="fv-input fv-pl-1"
-                        type="text"
-                        placeholder="Enter Track Tittle"
-                      />
+                    <div class="fv-form-group">
+                      <label for="">Music Tittle</label>
+                      <div class="fv-form-input">
+                        <input
+                          class="fv-input fv-pl-1"
+                          type="text"
+                          placeholder="Enter Track Tittle"
+                        />
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="fv-form-group">
-                    <label for="">Artist</label>
-                    <div class="fv-form-input">
-                      <input
-                        class="fv-input fv-pl-1"
-                        type="text"
-                        placeholder="Enter Artist Name"
-                      />
+                    <div class="fv-form-group">
+                      <label for="">Artist</label>
+                      <div class="fv-form-input">
+                        <input
+                          class="fv-input fv-pl-1"
+                          type="text"
+                          placeholder="Enter Artist Name"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <div class="script-input-container">
                   <div>
-                    <button class="btn">Add more music</button>
+                    <button data-add-form-group="music-form" class="btn">
+                      Add more music
+                    </button>
                   </div>
                 </div>
               </div>
@@ -764,48 +768,54 @@
               <div class="script-item">
                 <p>Upload Awards</p>
 
-                <div class="input-row">
-                  <div class="fv-form-group">
-                    <label for="">Upload Award</label>
+                <div data-form-group="award-form" class="form-groups">
+                  <div class="fv-d-flex fv-flex-column fv-gap-1">
+                    <div class="input-row">
+                      <div class="fv-form-group">
+                        <label for="">Upload Award</label>
+                        <div class="fv-form-input">
+                          <input class="fv-input fv-pl-1" type="file" />
+                        </div>
+                      </div>
+
+                      <div class="fv-form-group">
+                        <label for="">Award Tittle</label>
+                        <div class="fv-form-input">
+                          <input
+                            class="fv-input fv-pl-1"
+                            type="text"
+                            placeholder="Enter Track Tittle"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="fv-form-group">
+                        <label for="">Award Date</label>
+                        <div class="fv-form-input">
+                          <input
+                            class="fv-input fv-pl-1"
+                            type="text"
+                            placeholder="Enter Artist Name"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
                     <div class="fv-form-input">
-                      <input class="fv-input fv-pl-1" type="file" />
+                      <textarea
+                        rows="4"
+                        placeholder="Enter Synopsis"
+                        class="fv-input"
+                      ></textarea>
                     </div>
                   </div>
-
-                  <div class="fv-form-group">
-                    <label for="">Award Tittle</label>
-                    <div class="fv-form-input">
-                      <input
-                        class="fv-input fv-pl-1"
-                        type="text"
-                        placeholder="Enter Track Tittle"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="fv-form-group">
-                    <label for="">Award Date</label>
-                    <div class="fv-form-input">
-                      <input
-                        class="fv-input fv-pl-1"
-                        type="text"
-                        placeholder="Enter Artist Name"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="fv-form-input">
-                  <textarea
-                    rows="4"
-                    placeholder="Enter Synopsis"
-                    class="fv-input"
-                  ></textarea>
                 </div>
 
                 <div class="script-input-container">
                   <div>
-                    <button class="btn">Add more award</button>
+                    <button data-add-form-group="award-form" class="btn">
+                      Add more award
+                    </button>
                   </div>
                 </div>
               </div>
@@ -813,52 +823,58 @@
               <div class="script-item">
                 <p>Upload Casts</p>
 
-                <div class="input-row">
-                  <div class="fv-form-group">
-                    <label for="">Upload Image</label>
-                    <div class="fv-form-input">
-                      <input class="fv-input fv-pl-1" type="file" />
+                <div data-form-group="cast-form" class="form-groups">
+                  <div class="fv-d-flex fv-flex-column fv-gap-1">
+                    <div class="input-row">
+                      <div class="fv-form-group">
+                        <label for="">Upload Image</label>
+                        <div class="fv-form-input">
+                          <input class="fv-input fv-pl-1" type="file" />
+                        </div>
+                      </div>
+
+                      <div class="fv-form-group">
+                        <label for="">Cast name</label>
+                        <div class="fv-form-input">
+                          <input
+                            class="fv-input fv-pl-1"
+                            type="text"
+                            placeholder="Enter Track Tittle"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="fv-form-group">
+                        <label for="">Played As</label>
+                        <div class="fv-form-input">
+                          <input
+                            class="fv-input fv-pl-1"
+                            type="text"
+                            placeholder="Enter Artist Name"
+                          />
+                        </div>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="fv-form-group">
-                    <label for="">Cast name</label>
-                    <div class="fv-form-input">
-                      <input
-                        class="fv-input fv-pl-1"
-                        type="text"
-                        placeholder="Enter Track Tittle"
-                      />
+                    <div class="fv-form-group">
+                      <label for="">AAbout Cast</label>
+
+                      <div class="fv-form-input">
+                        <textarea
+                          rows="4"
+                          placeholder="Enter Synopsis"
+                          class="fv-input"
+                        ></textarea>
+                      </div>
                     </div>
-                  </div>
-
-                  <div class="fv-form-group">
-                    <label for="">Played As</label>
-                    <div class="fv-form-input">
-                      <input
-                        class="fv-input fv-pl-1"
-                        type="text"
-                        placeholder="Enter Artist Name"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="fv-form-group">
-                  <label for="">AAbout Cast</label>
-
-                  <div class="fv-form-input">
-                    <textarea
-                      rows="4"
-                      placeholder="Enter Synopsis"
-                      class="fv-input"
-                    ></textarea>
                   </div>
                 </div>
 
                 <div class="script-input-container">
                   <div>
-                    <button class="btn">Add more cast</button>
+                    <button data-add-form-group="cast-form" class="btn">
+                      Add more cast
+                    </button>
                   </div>
                 </div>
               </div>

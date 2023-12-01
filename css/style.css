@@ -2933,6 +2933,12 @@ aside > header {
   line-height: 22.4px; /* 140% */
 }
 
+.form-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 @media screen and (min-width: 880px) {
   .fv-btn {
     width: fit-content;

@@ -4,6 +4,7 @@ const themeSelector = document.querySelector("#fv-theme-selector");
 const loginLogo = document.querySelector("#loginBannerLogo");
 const fileInputs = document.querySelectorAll("[data-file-input]");
 const allTabs = document.querySelectorAll("[data-tab]");
+const allFormGroups = document.querySelectorAll("[data-form-group]");
 
 if (darkMode === "enabled") {
   enableDarkMode();
@@ -144,5 +145,18 @@ fileInputs.forEach((input) => {
     } else {
       fileNameElement.textContent = "";
     }
+  });
+});
+
+allFormGroups.forEach((group) => {
+  const groupID = group.getAttribute("data-form-group");
+  const addGroupButton = document.querySelector(
+    `[data-add-form-group="${groupID}"]`
+  );
+  const inputStructure = group.firstElementChild.cloneNode(true);
+
+  addGroupButton.addEventListener("click", () => {
+    const clone = inputStructure.cloneNode(true);
+    group.appendChild(clone);
   });
 });
