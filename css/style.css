@@ -490,6 +490,19 @@ hr {
   flex-wrap: wrap;
 }
 
+.mailing-list {
+  color: var(--flovest-grey-2, #54595f);
+
+  /* Neptunepress/Body 1 */
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+}
+
 .fv-flex-column {
   flex-direction: column;
 }

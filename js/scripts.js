@@ -5,6 +5,8 @@ const loginLogo = document.querySelector("#loginBannerLogo");
 const fileInputs = document.querySelectorAll("[data-file-input]");
 const allTabs = document.querySelectorAll("[data-tab]");
 const allFormGroups = document.querySelectorAll("[data-form-group]");
+const mailingList = document.querySelector(".mailing-list");
+const copyMailingListButton = document.querySelector("#copyMailingList");
 
 if (darkMode === "enabled") {
   enableDarkMode();
@@ -17,6 +19,17 @@ function toggleTheme() {
   } else {
     disableDarkMode();
   }
+}
+
+if (copyMailingListButton) {
+  copyMailingListButton.addEventListener("click", function () {
+    const textToCopy = mailingList.textContent;
+    navigator.clipboard.writeText(textToCopy);
+    copyMailingListButton.textContent = "Copied";
+    setTimeout(() => {
+      copyMailingListButton.textContent = "Copy";
+    }, 3000);
+  });
 }
 
 function enableDarkMode() {
